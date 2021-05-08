@@ -141,3 +141,4 @@ class EHNTests: XCTestCase {
  All is well! Payload:  map([SwiftCBOR.CBOR.utf8String("foo"): SwiftCBOR.CBOR.utf8String("bar")])
 
  */
+

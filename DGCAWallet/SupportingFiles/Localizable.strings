@@ -27,14 +27,15 @@
 
 "log.certs-loaded" = "%d certs loaded.";
 "list.cell.scanned-at" = "Scanned %@";
-"btn.okay" = "Okay";
+"btn.okay" = "ok";
+"btn.submit" = "Submit";
 "btn.cancel" = "Cancel";
 "btn.save" = "Save";
-"tan.confirm.title" = "Confirm TAN";
-"tan.confirm.text" = "Please enter the TAN that was provided together with your certificate:";
+"tan.confirm.title" = "Enter 4 digit PIN";
+"tan.confirm.text" = "Please enter the 4 digit PIN that's provided together with your certificate:";
 "tan.confirm.placeholder" = "XYZ12345";
 "tan.confirm.success.title" = "Success";
-"tan.confirm.success.text" = "Certificate was saved to wallet!";
+"tan.confirm.success.text" = "Your certificate has been saved to your wallet.";
 "tan.confirm.fail.title" = "Failure";
-"tan.confirm.fail.text" = "Check the TAN and try again.";
+"tan.confirm.fail.text" = "Check our 4 digit PIN and try again.";
 "tan.label" = "TAN: %@";
