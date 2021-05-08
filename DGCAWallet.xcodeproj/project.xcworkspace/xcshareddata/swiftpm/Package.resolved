@@ -21,10 +21,10 @@
       },
       {
         "package": "JSONSchema",
-        "repositoryURL": "https://github.com/jnewc/JSONSchema.swift",
+        "repositoryURL": "https://github.com/Hassniazi/JSONSchema.swift",
         "state": {
           "branch": "master",
-          "revision": "4637ac1cf57745c29003738f36e1b6c232fbd1a6",
+          "revision": "5f19844bc46db7bb4b6d6e81d917632de76e63b5",
           "version": null
         }
       },
