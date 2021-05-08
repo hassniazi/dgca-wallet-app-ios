@@ -25,22 +25,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEe-AH-rsr" userLabel="Container">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9u-Ia-KEX" customClass="RoundedButton" customModule="DGCAWallet" customModuleProvider="target">
-                                        <rect key="frame" x="281" y="664.66666666666663" width="78" height="53.333333333333371"/>
-                                        <color key="backgroundColor" name="blue"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <state key="normal" title="Done">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
-                                                <real key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="closeButtonClick" destination="WCj-Xf-fml" eventType="touchUpInside" id="F45-1e-sPf"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Mustermann" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVW-2y-e4I">
                                         <rect key="frame" x="16" y="70" width="343" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
@@ -48,7 +32,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsC-7e-Skh">
-                                        <rect key="frame" x="0.0" y="124.33333333333331" width="375" height="536.33333333333348"/>
+                                        <rect key="frame" x="0.0" y="124.33333333333331" width="375" height="538.66666666666674"/>
                                         <connections>
                                             <segue destination="PGK-qk-zXH" kind="embed" id="qHl-nM-9kf"/>
                                         </connections>
@@ -63,19 +47,28 @@
                                             <action selector="cancelButtonClick" destination="WCj-Xf-fml" eventType="touchUpInside" id="JXr-tj-T3U"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EU_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-U8-pn3">
-                                        <rect key="frame" x="16" y="667.33333333333337" width="74.666666666666671" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="zGf-U8-pn3" secondAttribute="height" multiplier="14:9" id="nDE-5U-ZWG"/>
-                                        </constraints>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9u-Ia-KEX" customClass="RoundedButton" customModule="DGCAWallet" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="671" width="340" height="51"/>
+                                        <color key="backgroundColor" name="blue"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="closeButtonClick" destination="WCj-Xf-fml" eventType="touchUpInside" id="F45-1e-sPf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DVW-2y-e4I" firstAttribute="top" secondItem="yEe-AH-rsr" secondAttribute="top" priority="999" constant="70" id="695-CS-7M3"/>
                                     <constraint firstItem="DVW-2y-e4I" firstAttribute="top" secondItem="yEe-AH-rsr" secondAttribute="top" priority="998" constant="32" id="6Py-fR-Th3"/>
                                     <constraint firstAttribute="trailing" secondItem="DVW-2y-e4I" secondAttribute="trailing" constant="16" id="7qh-Db-iAm"/>
                                     <constraint firstAttribute="bottom" secondItem="a9u-Ia-KEX" secondAttribute="bottom" constant="16" id="DIh-vB-0ut"/>
-                                    <constraint firstItem="zGf-U8-pn3" firstAttribute="leading" secondItem="yEe-AH-rsr" secondAttribute="leading" constant="16" id="DXu-AK-qsU"/>
                                     <constraint firstAttribute="trailing" secondItem="a9u-Ia-KEX" secondAttribute="trailing" constant="16" id="Fvw-Wg-v6P"/>
                                     <constraint firstItem="dsC-7e-Skh" firstAttribute="top" secondItem="DVW-2y-e4I" secondAttribute="bottom" constant="16" id="IOq-Nn-KSI"/>
                                     <constraint firstItem="YeB-JS-Q1Q" firstAttribute="leading" secondItem="yEe-AH-rsr" secondAttribute="leading" constant="16" id="KST-2b-3cu"/>
@@ -84,8 +77,6 @@
                                     <constraint firstItem="dsC-7e-Skh" firstAttribute="leading" secondItem="yEe-AH-rsr" secondAttribute="leading" id="fGR-NQ-ao6"/>
                                     <constraint firstItem="DVW-2y-e4I" firstAttribute="leading" secondItem="yEe-AH-rsr" secondAttribute="leading" constant="16" id="iQB-29-cRZ"/>
                                     <constraint firstItem="a9u-Ia-KEX" firstAttribute="top" secondItem="dsC-7e-Skh" secondAttribute="bottom" constant="4" id="kyo-Ax-A3w"/>
-                                    <constraint firstItem="zGf-U8-pn3" firstAttribute="centerY" secondItem="a9u-Ia-KEX" secondAttribute="centerY" id="mFX-bT-z3z"/>
-                                    <constraint firstItem="zGf-U8-pn3" firstAttribute="height" secondItem="a9u-Ia-KEX" secondAttribute="height" multiplier="0.9" id="yaf-tB-Xn4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -186,16 +177,17 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="DE4382974329" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn8-3g-ntq">
                                                     <rect key="frame" x="16" y="108.66666666666667" width="343" height="38.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
-                                                    <color key="textColor" name="black"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identification Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxm-hI-f1t">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certificate ID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxm-hI-f1t">
                                                     <rect key="frame" x="16" y="16" width="343" height="88.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" name="black"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.062745098040000002" green="0.2901960784" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="gn8-3g-ntq" firstAttribute="top" secondItem="bxm-hI-f1t" secondAttribute="bottom" constant="4" id="4D3-Ty-4Ud"/>
                                                 <constraint firstAttribute="trailing" secondItem="bxm-hI-f1t" secondAttribute="trailing" constant="16" id="8R9-0q-GQH"/>
@@ -251,7 +243,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="EU_logo" width="72" height="48"/>
         <image name="gradient" width="1" height="100"/>
         <namedColor name="black">
             <color red="0.25099998712539673" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -49,14 +49,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-eV-IV4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="127"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nhs_scotland" translatesAutoresizingMaskIntoConstraints="NO" id="igG-Hc-6py">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nhs_scotland" translatesAutoresizingMaskIntoConstraints="NO" id="igG-Hc-6py">
                                         <rect key="frame" x="23" y="56" width="63" height="63"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="igG-Hc-6py" secondAttribute="height" multiplier="1:1" id="LVh-CQ-6Ty"/>
+                                            <constraint firstAttribute="height" constant="63" id="PcG-Wb-ZPs"/>
+                                            <constraint firstAttribute="width" constant="63" id="d7Q-mA-ugT"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.2901960784" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="igG-Hc-6py" secondAttribute="bottom" constant="5" id="Bm0-A2-gb0"/>
+                                    <constraint firstAttribute="trailing" secondItem="igG-Hc-6py" secondAttribute="trailing" constant="328" id="K9d-kB-zb1"/>
+                                    <constraint firstItem="igG-Hc-6py" firstAttribute="top" secondItem="cE2-eV-IV4" secondAttribute="top" constant="56" id="eVi-yS-k0a"/>
+                                    <constraint firstItem="igG-Hc-6py" firstAttribute="leading" secondItem="cE2-eV-IV4" secondAttribute="leading" constant="23" id="hAt-XN-41t"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Digital Health Pass" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-2s-CMN">
                                 <rect key="frame" x="112" y="75" width="287" height="29"/>
@@ -65,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="emV-oh-VSt">
-                                <rect key="frame" x="0.0" y="127" width="414" height="657"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="660"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="walletCell" rowHeight="164" id="JcT-Kw-bMh" customClass="WalletCell" customModule="DGCAWallet" customModuleProvider="target">
@@ -116,16 +126,16 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W03-Gm-CHU">
-                                <rect key="frame" x="0.0" y="127" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="676"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Digital Health Pass Wallet is Empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0r-gi-rzF">
-                                        <rect key="frame" x="21" y="260.5" width="372" height="24"/>
+                                        <rect key="frame" x="21" y="262" width="372" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" name="disabledText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the &quot;Scan Code&quot; button below to scan and download your code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-y5-Iav">
-                                        <rect key="frame" x="83" y="300.5" width="248" height="72"/>
+                                        <rect key="frame" x="83" y="302" width="248" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" name="disabledText"/>
                                         <nil key="highlightedColor"/>
