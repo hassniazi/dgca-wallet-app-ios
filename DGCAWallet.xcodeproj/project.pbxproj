@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1493302646F2C900857138 /* PinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C14932F2646F2C900857138 /* PinViewController.xib */; };
+		5C1493322646F35200857138 /* SVPinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C1493312646F35200857138 /* SVPinCell.xib */; };
+		5C1493342646F3E800857138 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1493332646F3E800857138 /* PinViewController.swift */; };
+		5C23B5EC2647083700B456E0 /* SVPinField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23B5EA2647083700B456E0 /* SVPinField.swift */; };
+		5C23B5ED2647083700B456E0 /* SVPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23B5EB2647083700B456E0 /* SVPinView.swift */; };
 		CE13CF00262DCC180070C80E /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = CE13CEFF262DCC180070C80E /* FloatingPanel */; };
 		CE13CF05262DCDCD0070C80E /* CertificateViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE13CF04262DCDCD0070C80E /* CertificateViewer.storyboard */; };
 		CE13CF0A262DCDDA0070C80E /* CertificateViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13CF09262DCDDA0070C80E /* CertificateViewer.swift */; };
@@ -62,6 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C14932F2646F2C900857138 /* PinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinViewController.xib; sourceTree = "<group>"; };
+		5C1493312646F35200857138 /* SVPinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVPinCell.xib; sourceTree = "<group>"; };
+		5C1493332646F3E800857138 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinViewController.swift; path = DGCAWallet/ViewControllers/PinViewController.swift; sourceTree = SOURCE_ROOT; };
+		5C23B5EA2647083700B456E0 /* SVPinField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVPinField.swift; sourceTree = "<group>"; };
+		5C23B5EB2647083700B456E0 /* SVPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVPinView.swift; sourceTree = "<group>"; };
 		CE13CF04262DCDCD0070C80E /* CertificateViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CertificateViewer.storyboard; sourceTree = "<group>"; };
 		CE13CF09262DCDDA0070C80E /* CertificateViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewer.swift; sourceTree = "<group>"; };
 		CE13CF0E262DD0D80070C80E /* FullFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFloatingPanelLayout.swift; sourceTree = "<group>"; };
@@ -132,6 +142,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C23B5E92647078B00B456E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C23B5EA2647083700B456E0 /* SVPinField.swift */,
+				5C23B5EB2647083700B456E0 /* SVPinView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		CE13CF19262DDE200070C80E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +191,7 @@
 				CE891304263581D900CB92AF /* Home.swift */,
 				CEDABD48263C70EF007A9B97 /* CertPages.swift */,
 				CEDABD3F263C5FF4007A9B97 /* CertTable.swift */,
+				5C1493332646F3E800857138 /* PinViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +270,9 @@
 		CEA6D6EA261F8D2700715333 /* DGCAWallet */ = {
 			isa = PBXGroup;
 			children = (
+				5C23B5E92647078B00B456E0 /* Classes */,
+				5C14932F2646F2C900857138 /* PinViewController.xib */,
+				5C1493312646F35200857138 /* SVPinCell.xib */,
 				CEA15561262F6DA10024B7AC /* Protocols */,
 				CE157F8B262E24EC00FE4821 /* Models */,
 				CE13CF1E262DDE800070C80E /* SupportingFiles */,
@@ -398,8 +421,10 @@
 				CE13CF05262DCDCD0070C80E /* CertificateViewer.storyboard in Resources */,
 				CE345FB826447A9F003B457E /* Localizable.strings in Resources */,
 				CEA6D6F8261F8D2900715333 /* LaunchScreen.storyboard in Resources */,
+				5C1493302646F2C900857138 /* PinViewController.xib in Resources */,
 				CE81533A263FF7EC0030D777 /* README.md in Resources */,
 				CEA6D6F5261F8D2900715333 /* Assets.xcassets in Resources */,
+				5C1493322646F35200857138 /* SVPinCell.xib in Resources */,
 				CEA6D6F3261F8D2700715333 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,14 +464,17 @@
 				CE56BC07264068110044FD3F /* GatewayConnection.swift in Sources */,
 				CEA6D6F0261F8D2700715333 /* Scan.swift in Sources */,
 				CE13CF23262DDF810070C80E /* RoundedButton.swift in Sources */,
+				5C23B5ED2647083700B456E0 /* SVPinView.swift in Sources */,
 				CEA6E561264058B50066DC8E /* UIViewController.swift in Sources */,
 				CEA6D6EC261F8D2700715333 /* AppDelegate.swift in Sources */,
 				CE891305263581D900CB92AF /* Home.swift in Sources */,
 				CEA15563262F6DAB0024B7AC /* CertViewerDelegate.swift in Sources */,
 				CE260F56263DD1720083A200 /* WalletCell.swift in Sources */,
+				5C1493342646F3E800857138 /* PinViewController.swift in Sources */,
 				CEA15570262F79DE0024B7AC /* InfoCell.swift in Sources */,
 				CED949CA263B50CE00883558 /* List.swift in Sources */,
 				CEA6D6EE261F8D2700715333 /* SceneDelegate.swift in Sources */,
+				5C23B5EC2647083700B456E0 /* SVPinField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
