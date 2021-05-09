@@ -57,7 +57,7 @@ class ListVC: UIViewController {
   @IBOutlet weak var emptyView: UIView!
 
   func reloadTable() {
-    emptyView.alpha = listElements.isEmpty ? 1 : 0
+   emptyView.alpha = (listActivePasses.isEmpty && listInactivePasses.isEmpty) ? 1 : 0
     table.reloadData()
   }
 
@@ -125,12 +125,55 @@ extension ListVC: ScanVCDelegate {
 }
 
 extension ListVC: UITableViewDataSource {
-  var listElements: [DatedCertString] {
-    LocalData.sharedInstance.certStrings.reversed()
-  }
+   
+   var listActivePasses: [DatedCertString] {
+      
+      let now = Date();
+      
+      let filteredReversedPasses = LocalData.sharedInstance.certStrings.reversed().filter { (datedCertString) -> Bool in
+         (datedCertString.cert!.exp > now)
+      }
+      
+      return filteredReversedPasses;
+   }
+    
+   var listInactivePasses: [DatedCertString] {
 
+      let now = Date();
+      
+      let filteredReversedPasses = LocalData.sharedInstance.certStrings.reversed().filter { (datedCertString) -> Bool in
+         (datedCertString.cert!.exp <= now)
+      }
+      
+      return filteredReversedPasses;
+   }
+    
+   func numberOfSections(in tableView: UITableView) -> Int {
+      return 2
+   }
+
+   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+      if (section == 0)
+      {
+         return "Active Passes"
+      }
+      else
+      {
+         return "Inactive Passes"
+      }
+   }
+   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    listElements.count
+    
+   if (section == 0)
+   {
+      return listActivePasses.count
+   }
+   else
+   {
+      return listInactivePasses.count;
+   }
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -139,7 +182,14 @@ extension ListVC: UITableViewDataSource {
       return cell
     }
 
-    walletCell.draw(listElements[indexPath.row])
+   if (indexPath.section == 0)
+   {
+      walletCell.draw(listActivePasses[indexPath.row])
+   }
+   else
+   {
+      walletCell.draw(listInactivePasses[indexPath.row])
+   }
     return walletCell
   }
 }
@@ -147,12 +197,15 @@ extension ListVC: UITableViewDataSource {
 extension ListVC: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     table.deselectRow(at: indexPath, animated: true)
-    guard
-      let cert = listElements[indexPath.row].cert
-    else {
-      return
-    }
-    presentViewer(for: cert, with: listElements[indexPath.row].storedTAN)
+
+   let pass = (indexPath.section == 0) ? listActivePasses[indexPath.row] : listInactivePasses[indexPath.row]
+   
+   guard pass.cert != nil else
+   {
+      return;
+   }
+   
+   presentViewer(for: pass.cert!, with: pass.storedTAN)
   }
 }
 
