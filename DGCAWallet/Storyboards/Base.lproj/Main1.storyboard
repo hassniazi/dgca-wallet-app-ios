@@ -61,9 +61,9 @@
                                             <constraint firstAttribute="width" constant="63" id="d7Q-mA-ugT"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Health Pass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-2s-CMN">
-                                        <rect key="frame" x="103" y="82.333333333333329" width="294" height="34.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Digital Health Pass" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-2s-CMN">
+                                        <rect key="frame" x="109" y="85.333333333333371" width="294" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -209,14 +209,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nhs_scotland" translatesAutoresizingMaskIntoConstraints="NO" id="bgA-BE-q6I">
-                                <rect key="frame" x="127" y="298" width="161" height="140"/>
+                                <rect key="frame" x="147" y="316" width="120" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="YuN-K5-tOH"/>
                                     <constraint firstAttribute="width" constant="230" id="eP9-S2-fU0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Digital Health Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7y-9d-COU">
-                                <rect key="frame" x="80" y="446" width="255" height="36"/>
+                                <rect key="frame" x="88" y="429" width="255" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

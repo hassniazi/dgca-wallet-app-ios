@@ -113,21 +113,6 @@
             </objects>
             <point key="canvasLocation" x="1103" y="117"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="J7z-bk-h5n">
-            <objects>
-                <viewController id="tcL-RX-u7m" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aei-gz-3kj" customClass="SVPinView" customModule="DGCAWallet" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="67P-0e-uHk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qik-3q-e8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1684" y="305"/>
-        </scene>
         <!--Cert CodeVC-->
         <scene sceneID="ua8-UZ-7hv">
             <objects>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PinViewController" customModule="DGCAWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O96-Bq-RdG" customClass="SVPinView" customModule="SVPinView">
+                                <rect key="frame" x="8" y="91" width="359" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Mp3-x8-33O"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your pin number." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5A-dA-yto">
+                                <rect key="frame" x="71.5" y="40.5" width="232.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HQD-oC-cdb">
+                                <rect key="frame" x="50" y="221" width="275" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpc-Vf-TKF">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiT-hR-xJu">
+                                        <rect key="frame" x="87.5" y="0.0" width="78" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzX-hv-TBG">
+                                        <rect key="frame" x="174" y="0.0" width="101" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Health Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnQ-7W-wBd">
+                                <rect key="frame" x="113" y="10" width="149" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.4648166232638889" green="0.36143663194444442" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQD-oC-cdb" firstAttribute="top" secondItem="O96-Bq-RdG" secondAttribute="bottom" constant="50" id="0CT-f0-eQU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQD-oC-cdb" secondAttribute="trailing" constant="50" id="7Yy-P0-Xhs"/>
+                            <constraint firstItem="TnQ-7W-wBd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ox-7i-qXu"/>
+                            <constraint firstItem="HQD-oC-cdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="AuA-5F-b16"/>
+                            <constraint firstAttribute="trailing" secondItem="O96-Bq-RdG" secondAttribute="trailing" constant="8" id="I5U-Pt-qWF"/>
+                            <constraint firstItem="TnQ-7W-wBd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Nmk-Tg-Trs"/>
+                            <constraint firstItem="O96-Bq-RdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="OIL-Bl-z2s"/>
+                            <constraint firstItem="h5A-dA-yto" firstAttribute="top" secondItem="TnQ-7W-wBd" secondAttribute="bottom" constant="10" id="Ud9-yj-kO7"/>
+                            <constraint firstItem="O96-Bq-RdG" firstAttribute="top" secondItem="h5A-dA-yto" secondAttribute="bottom" constant="30" id="e2L-qZ-LpM"/>
+                            <constraint firstItem="h5A-dA-yto" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eeH-dM-Cg9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ss4-NK-otV"/>
+                    <connections>
+                        <outlet property="pinView" destination="O96-Bq-RdG" id="SDc-2b-hVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+</document>

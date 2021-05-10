@@ -22,14 +22,14 @@ class PinViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         // Setup background gradient
-        let valenciaColor = UIColor(red: 16/255, green: 74/255, blue: 135/255, alpha: 1)
-        let discoColor = UIColor(red: 62/255, green: 117/255, blue: 177/255, alpha: 1)
+        let valenciaColor = UIColor(red: 218/255, green: 68/255, blue: 83/255, alpha: 1)
+        let discoColor = UIColor(red: 137/255, green: 33/255, blue: 107/255, alpha: 1)
         setGradientBackground(view: self.view, colorTop: valenciaColor, colorBottom: discoColor)
     }
     
     func configurePinView() {
         
-        pinView.pinLength = 4
+        pinView.pinLength = 6
         pinView.secureCharacter = "\u{25CF}"
         pinView.interSpace = 10
         pinView.textColor = UIColor.white
@@ -69,7 +69,7 @@ class PinViewController: UIViewController {
         
         pinView.didFinishCallback = didFinishEnteringPin(pin:)
         pinView.didChangeCallback = { pin in
-            print("The entered pin is \(pin)")
+            print("The entered pin is \(pin)") 
         }
     }
     
