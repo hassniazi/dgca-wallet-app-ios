@@ -1,0 +1,6 @@
+module Pods_DGCAWallet {
+  umbrella header "Pods-DGCAWallet-umbrella.h"
+
+  export *
+  module * { export * }
+}

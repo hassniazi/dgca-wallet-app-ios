@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C47340E95761A000F77185D14729B7 /* SVPinField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8797767C028206A77EEC2E8B4E9DED7 /* SVPinField.swift */; };
+		1EA989C4D6388839DC608E14BABB162C /* SVPinView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B20A65E31FC47BE3FD8762A36A23189 /* SVPinView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		30372212BAAE298041C191AE08D4B87A /* Pods-DGCAWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C92A48FF310DAB2E034CDF61538BE770 /* Pods-DGCAWallet-dummy.m */; };
+		49BFB782ED5E02189533693BE7C66841 /* SVPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CF0B1B13812AABF4E133AE3B757D7 /* SVPinView.swift */; };
+		66B7DB4B08D25BD8659C3072EB37E8E7 /* SVPinView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6509858E30C0070FCE50FAE86E2E09F8 /* SVPinView-dummy.m */; };
+		75026A85687184701146CD34297B82E4 /* Pods-DGCAWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8E86674BA24A0C80F38E7421C1EB97 /* Pods-DGCAWallet-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BAA0FF97E6325F714F58E93D8EDA5D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C48B6722F02A3772707DAF5E1572C89;
+			remoteInfo = SVPinView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4361D5211E711A6A7692CD9B7F58F5 /* SVPinView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVPinView.modulemap; sourceTree = "<group>"; };
+		0B47D8E5BCB14D823A8951AD5F569CA4 /* SVPinView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVPinView-prefix.pch"; sourceTree = "<group>"; };
+		11EA81E2ABBB1FAAB1B2323ED6104A68 /* libSVPinView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVPinView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB8FEE101B3C34517822A3339A0B191 /* Pods-DGCAWallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DGCAWallet-resources.sh"; sourceTree = "<group>"; };
+		29F217BD21C95FE50F89AEF708C24560 /* Pods-DGCAWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGCAWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		48F44EB0D30421998694FB35B51AA6FE /* libPods-DGCAWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DGCAWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B20A65E31FC47BE3FD8762A36A23189 /* SVPinView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVPinView-umbrella.h"; sourceTree = "<group>"; };
+		5D5154A8A66E0CD6A874598A38774EF7 /* SVPinCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SVPinCell.xib; path = "SVPinView/Source/XIB's/SVPinCell.xib"; sourceTree = "<group>"; };
+		5DF3AFF9991989EFA1A159A58B761C53 /* SVPinView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVPinView.debug.xcconfig; sourceTree = "<group>"; };
+		6509858E30C0070FCE50FAE86E2E09F8 /* SVPinView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVPinView-dummy.m"; sourceTree = "<group>"; };
+		959ECBF7BFD974421E6D16E562F27765 /* SVPinView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SVPinView.xib; path = "SVPinView/Source/XIB's/SVPinView.xib"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE7CF0B1B13812AABF4E133AE3B757D7 /* SVPinView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVPinView.swift; path = SVPinView/Source/Classes/SVPinView.swift; sourceTree = "<group>"; };
+		B73C5856574901BA6BAD34E608CF1A54 /* Pods-DGCAWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DGCAWallet.modulemap"; sourceTree = "<group>"; };
+		BCB82ED7D03DBC9E47A08E76A228FED4 /* Pods-DGCAWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGCAWallet.release.xcconfig"; sourceTree = "<group>"; };
+		C92A48FF310DAB2E034CDF61538BE770 /* Pods-DGCAWallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DGCAWallet-dummy.m"; sourceTree = "<group>"; };
+		CA8E86674BA24A0C80F38E7421C1EB97 /* Pods-DGCAWallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DGCAWallet-umbrella.h"; sourceTree = "<group>"; };
+		CAF6D7A4D7DE243BDC47DEE41CA2C8D3 /* Pods-DGCAWallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DGCAWallet-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA4736496868B81EA4B03D349F3D3F94 /* SVPinView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVPinView.release.xcconfig; sourceTree = "<group>"; };
+		EA65E7BFFBE541C784A6F07EE26A7942 /* Pods-DGCAWallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DGCAWallet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8797767C028206A77EEC2E8B4E9DED7 /* SVPinField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVPinField.swift; path = SVPinView/Source/Classes/SVPinField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7327536D774981673B8AECF81E0E0ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67888C40CBDAAB234E8D9CDD0B3295A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02142913E70F89988D3C9EF1E3BD4D0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B4361D5211E711A6A7692CD9B7F58F5 /* SVPinView.modulemap */,
+				6509858E30C0070FCE50FAE86E2E09F8 /* SVPinView-dummy.m */,
+				0B47D8E5BCB14D823A8951AD5F569CA4 /* SVPinView-prefix.pch */,
+				5B20A65E31FC47BE3FD8762A36A23189 /* SVPinView-umbrella.h */,
+				5DF3AFF9991989EFA1A159A58B761C53 /* SVPinView.debug.xcconfig */,
+				EA4736496868B81EA4B03D349F3D3F94 /* SVPinView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVPinView";
+			sourceTree = "<group>";
+		};
+		0DD7144734323F24C9973C82AF5B3735 /* Pods-DGCAWallet */ = {
+			isa = PBXGroup;
+			children = (
+				B73C5856574901BA6BAD34E608CF1A54 /* Pods-DGCAWallet.modulemap */,
+				EA65E7BFFBE541C784A6F07EE26A7942 /* Pods-DGCAWallet-acknowledgements.markdown */,
+				CAF6D7A4D7DE243BDC47DEE41CA2C8D3 /* Pods-DGCAWallet-acknowledgements.plist */,
+				C92A48FF310DAB2E034CDF61538BE770 /* Pods-DGCAWallet-dummy.m */,
+				1CB8FEE101B3C34517822A3339A0B191 /* Pods-DGCAWallet-resources.sh */,
+				CA8E86674BA24A0C80F38E7421C1EB97 /* Pods-DGCAWallet-umbrella.h */,
+				29F217BD21C95FE50F89AEF708C24560 /* Pods-DGCAWallet.debug.xcconfig */,
+				BCB82ED7D03DBC9E47A08E76A228FED4 /* Pods-DGCAWallet.release.xcconfig */,
+			);
+			name = "Pods-DGCAWallet";
+			path = "Target Support Files/Pods-DGCAWallet";
+			sourceTree = "<group>";
+		};
+		3271C15B46E4F3A4BFC93E7C3262D6C2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DD7144734323F24C9973C82AF5B3735 /* Pods-DGCAWallet */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D893B894B5C8B6D68AE920505B73E91 /* SVPinView */ = {
+			isa = PBXGroup;
+			children = (
+				F8797767C028206A77EEC2E8B4E9DED7 /* SVPinField.swift */,
+				AE7CF0B1B13812AABF4E133AE3B757D7 /* SVPinView.swift */,
+				4157DBD051795E9F8299609923085973 /* Resources */,
+				02142913E70F89988D3C9EF1E3BD4D0F /* Support Files */,
+			);
+			path = SVPinView;
+			sourceTree = "<group>";
+		};
+		4157DBD051795E9F8299609923085973 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D5154A8A66E0CD6A874598A38774EF7 /* SVPinCell.xib */,
+				959ECBF7BFD974421E6D16E562F27765 /* SVPinView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		60023EEF5A821B8D976456B71491B6A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D893B894B5C8B6D68AE920505B73E91 /* SVPinView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B64F0C160591AE27EB0A8D6729088717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F44EB0D30421998694FB35B51AA6FE /* libPods-DGCAWallet.a */,
+				11EA81E2ABBB1FAAB1B2323ED6104A68 /* libSVPinView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				60023EEF5A821B8D976456B71491B6A8 /* Pods */,
+				B64F0C160591AE27EB0A8D6729088717 /* Products */,
+				3271C15B46E4F3A4BFC93E7C3262D6C2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		699F76DCAEFCABD5F48AB1753AA21922 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA989C4D6388839DC608E14BABB162C /* SVPinView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DD14D1CA35687DAC0A9F137C630AD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75026A85687184701146CD34297B82E4 /* Pods-DGCAWallet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5CDCA2E8A2818F90B9FC45095C57F0B3 /* Pods-DGCAWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0C4F3B28A9F2A14450C2F5B36591D8 /* Build configuration list for PBXNativeTarget "Pods-DGCAWallet" */;
+			buildPhases = (
+				C5DD14D1CA35687DAC0A9F137C630AD9 /* Headers */,
+				19E37357ADEA7E0AE6113AF03A1C5324 /* Sources */,
+				7327536D774981673B8AECF81E0E0ECA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D67B30FDE57320ED85CB7C38161FCAF /* PBXTargetDependency */,
+			);
+			name = "Pods-DGCAWallet";
+			productName = "Pods-DGCAWallet";
+			productReference = 48F44EB0D30421998694FB35B51AA6FE /* libPods-DGCAWallet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8C48B6722F02A3772707DAF5E1572C89 /* SVPinView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB2D7F5E32BE88B72F5856DDFAB9AC7 /* Build configuration list for PBXNativeTarget "SVPinView" */;
+			buildPhases = (
+				699F76DCAEFCABD5F48AB1753AA21922 /* Headers */,
+				0EF70C7AB78BED02AA4D31FECFB320DA /* Sources */,
+				A67888C40CBDAAB234E8D9CDD0B3295A /* Frameworks */,
+				491298C3FA5ADA8198D84CB44A405350 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVPinView;
+			productName = SVPinView;
+			productReference = 11EA81E2ABBB1FAAB1B2323ED6104A68 /* libSVPinView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1250;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B64F0C160591AE27EB0A8D6729088717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CDCA2E8A2818F90B9FC45095C57F0B3 /* Pods-DGCAWallet */,
+				8C48B6722F02A3772707DAF5E1572C89 /* SVPinView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		491298C3FA5ADA8198D84CB44A405350 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SVPinView/SVPinView.modulemap",
+				"${PODS_ROOT}/Headers/Public/SVPinView/SVPinView-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SVPinView-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SVPinView/SVPinView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SVPinView/SVPinView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EF70C7AB78BED02AA4D31FECFB320DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C47340E95761A000F77185D14729B7 /* SVPinField.swift in Sources */,
+				66B7DB4B08D25BD8659C3072EB37E8E7 /* SVPinView-dummy.m in Sources */,
+				49BFB782ED5E02189533693BE7C66841 /* SVPinView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E37357ADEA7E0AE6113AF03A1C5324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30372212BAAE298041C191AE08D4B87A /* Pods-DGCAWallet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D67B30FDE57320ED85CB7C38161FCAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVPinView;
+			target = 8C48B6722F02A3772707DAF5E1572C89 /* SVPinView */;
+			targetProxy = 8BAA0FF97E6325F714F58E93D8EDA5D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0082FC00BCCBFCAA63AA5C98EA587C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		14D88B6B21DC57BCABF8F7427264E529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F217BD21C95FE50F89AEF708C24560 /* Pods-DGCAWallet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DGCAWallet/Pods-DGCAWallet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		546030F0EA957BEB526991C599033371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF3AFF9991989EFA1A159A58B761C53 /* SVPinView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SVPinView/SVPinView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = Headers/Public/SVPinView/SVPinView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SVPinView;
+				PRODUCT_NAME = SVPinView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DF4F101DAB320B8AAC7B874D10C57AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4736496868B81EA4B03D349F3D3F94 /* SVPinView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SVPinView/SVPinView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = Headers/Public/SVPinView/SVPinView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SVPinView;
+				PRODUCT_NAME = SVPinView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96706BF654C23874655FEA1F3059546B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB82ED7D03DBC9E47A08E76A228FED4 /* Pods-DGCAWallet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DGCAWallet/Pods-DGCAWallet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5B12AB88A4F6C443C963D290ECB2428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0082FC00BCCBFCAA63AA5C98EA587C17 /* Debug */,
+				E5B12AB88A4F6C443C963D290ECB2428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EB2D7F5E32BE88B72F5856DDFAB9AC7 /* Build configuration list for PBXNativeTarget "SVPinView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546030F0EA957BEB526991C599033371 /* Debug */,
+				7DF4F101DAB320B8AAC7B874D10C57AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0C4F3B28A9F2A14450C2F5B36591D8 /* Build configuration list for PBXNativeTarget "Pods-DGCAWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14D88B6B21DC57BCABF8F7427264E529 /* Debug */,
+				96706BF654C23874655FEA1F3059546B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
