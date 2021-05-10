@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CFC0EE826494549002243DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFC0EE726494549002243DC /* Main.storyboard */; };
+		5CFC0EE826494549002243DC /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFC0EE726494549002243DC /* Main2.storyboard */; };
 		5CFC0EEC264953CD002243DC /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC0EEB264953CD002243DC /* PinViewController.swift */; };
 		CE13CF00262DCC180070C80E /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = CE13CEFF262DCC180070C80E /* FloatingPanel */; };
 		CE13CF05262DCDCD0070C80E /* CertificateViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE13CF04262DCDCD0070C80E /* CertificateViewer.storyboard */; };
@@ -31,7 +31,7 @@
 		CEA6D6EC261F8D2700715333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6D6EB261F8D2700715333 /* AppDelegate.swift */; };
 		CEA6D6EE261F8D2700715333 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6D6ED261F8D2700715333 /* SceneDelegate.swift */; };
 		CEA6D6F0261F8D2700715333 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6D6EF261F8D2700715333 /* Scan.swift */; };
-		CEA6D6F3261F8D2700715333 /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA6D6F1261F8D2700715333 /* Main1.storyboard */; };
+		CEA6D6F3261F8D2700715333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA6D6F1261F8D2700715333 /* Main.storyboard */; };
 		CEA6D6F5261F8D2900715333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA6D6F4261F8D2900715333 /* Assets.xcassets */; };
 		CEA6D6F8261F8D2900715333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA6D6F6261F8D2900715333 /* LaunchScreen.storyboard */; };
 		CEA6D703261F8D2900715333 /* DGCAWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6D702261F8D2900715333 /* DGCAWalletTests.swift */; };
@@ -68,7 +68,7 @@
 		231A09B1BFF37EE1E8F6718A /* Pods-DGCAWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGCAWallet.release.xcconfig"; path = "Target Support Files/Pods-DGCAWallet/Pods-DGCAWallet.release.xcconfig"; sourceTree = "<group>"; };
 		3FA3C746DFDB1C5EEE88B0BB /* Pods-DGCAWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGCAWallet.debug.xcconfig"; path = "Target Support Files/Pods-DGCAWallet/Pods-DGCAWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		4642B8AE3F4A18799A312B04 /* libPods-DGCAWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DGCAWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CFC0EE726494549002243DC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5CFC0EE726494549002243DC /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		5CFC0EEB264953CD002243DC /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
 		CE13CF04262DCDCD0070C80E /* CertificateViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CertificateViewer.storyboard; sourceTree = "<group>"; };
 		CE13CF09262DCDDA0070C80E /* CertificateViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewer.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		CEA6D6EB261F8D2700715333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA6D6ED261F8D2700715333 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEA6D6EF261F8D2700715333 /* Scan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan.swift; sourceTree = "<group>"; };
-		CEA6D6F2261F8D2700715333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main1.storyboard; sourceTree = "<group>"; };
+		CEA6D6F2261F8D2700715333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA6D6F4261F8D2900715333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA6D6F7261F8D2900715333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA6D6F9261F8D2900715333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				CEA6D6F6261F8D2900715333 /* LaunchScreen.storyboard */,
-				CEA6D6F1261F8D2700715333 /* Main1.storyboard */,
+				CEA6D6F1261F8D2700715333 /* Main.storyboard */,
 				CE13CF04262DCDCD0070C80E /* CertificateViewer.storyboard */,
-				5CFC0EE726494549002243DC /* Main.storyboard */,
+				5CFC0EE726494549002243DC /* Main2.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -422,10 +422,10 @@
 				CE13CF05262DCDCD0070C80E /* CertificateViewer.storyboard in Resources */,
 				CE345FB826447A9F003B457E /* Localizable.strings in Resources */,
 				CEA6D6F8261F8D2900715333 /* LaunchScreen.storyboard in Resources */,
-				5CFC0EE826494549002243DC /* Main.storyboard in Resources */,
+				5CFC0EE826494549002243DC /* Main2.storyboard in Resources */,
 				CE81533A263FF7EC0030D777 /* README.md in Resources */,
 				CEA6D6F5261F8D2900715333 /* Assets.xcassets in Resources */,
-				CEA6D6F3261F8D2700715333 /* Main1.storyboard in Resources */,
+				CEA6D6F3261F8D2700715333 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,12 +551,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEA6D6F1261F8D2700715333 /* Main1.storyboard */ = {
+		CEA6D6F1261F8D2700715333 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CEA6D6F2261F8D2700715333 /* Base */,
 			);
-			name = Main1.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		CEA6D6F6261F8D2900715333 /* LaunchScreen.storyboard */ = {

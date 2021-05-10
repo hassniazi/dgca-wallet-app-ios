@@ -37,5 +37,5 @@
 "tan.confirm.success.title" = "Success";
 "tan.confirm.success.text" = "Your certificate has been saved to your wallet.";
 "tan.confirm.fail.title" = "Failure";
-"tan.confirm.fail.text" = "Check our 4 digit PIN and try again.";
+"tan.confirm.fail.text" = "Check your 4 digit PIN and try again.";
 "tan.label" = "TAN: %@";

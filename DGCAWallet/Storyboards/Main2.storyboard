@@ -54,7 +54,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.4648166232638889" green="0.36143663194444442" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.062745098039215685" green="0.29019607843137252" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HQD-oC-cdb" firstAttribute="top" secondItem="O96-Bq-RdG" secondAttribute="bottom" constant="50" id="0CT-f0-eQU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQD-oC-cdb" secondAttribute="trailing" constant="50" id="7Yy-P0-Xhs"/>
