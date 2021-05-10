@@ -117,7 +117,7 @@
         <scene sceneID="J7z-bk-h5n">
             <objects>
                 <viewController id="tcL-RX-u7m" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aei-gz-3kj">
+                    <view key="view" contentMode="scaleToFill" id="Aei-gz-3kj" customClass="SVPinView" customModule="DGCAWallet" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="67P-0e-uHk"/>

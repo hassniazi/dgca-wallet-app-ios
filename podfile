@@ -1,0 +1,3 @@
+target 'DGCAWallet' do
+  pod 'SVPinView', '~> 1.0'
+end

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Xornorik. All rights reserved.
 //
 import UIKit
-//import SVPinView - Hass Niazi added to project as would not install as module
+import SVPinView // Hass Niazi added to project as would not install as module
 
 class PinViewController: UIViewController {
     
