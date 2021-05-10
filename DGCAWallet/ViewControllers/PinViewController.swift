@@ -11,7 +11,8 @@ import SVPinView
 class PinViewController: UIViewController {
     
     @IBOutlet var pinView: SVPinView!
-    
+    var completionHandler: ((String)->Void)?
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "SVPinView"
@@ -129,7 +130,9 @@ class PinViewController: UIViewController {
     }
     
     func didFinishEnteringPin(pin:String) {
-        showAlert(title: "Success", message: "The Pin entered is \(pin)")
+        //showAlert(title: "Success", message: "The Pin entered is \(pin)")
+      completionHandler?(pin)
+      self.dismiss(animated: true)
     }
     
     // MARK: Helper Functions

@@ -78,7 +78,22 @@ class CertificateViewerVC: UIViewController {
     if isSaved {
       return dismiss(animated: true, completion: nil)
     }
-    saveCert()
+   else
+    {
+      let pinViewController = UIStoryboard(name: "PinEntry", bundle: nil).instantiateViewController(withIdentifier: "PinEntry") as! PinViewController
+      
+      // Set a closure to trigger when the pin entry is successful.
+      // The pin view controller calls this to act on the resulting pin, and then
+      // automatically dismisses itself.
+      pinViewController.completionHandler =
+      {
+         finalPin in
+         
+         self.saveCert(enteredPin: finalPin)
+      }
+      
+      self.present(pinViewController, animated: true, completion: nil)
+    }
   }
 
   @IBAction
@@ -86,37 +101,41 @@ class CertificateViewerVC: UIViewController {
     dismiss(animated: true, completion: nil)
   }
 
-  func saveCert() {
-    showInputDialog(
-      title: l10n("tan.confirm.title"),
-      subtitle: l10n("tan.confirm.text"),
-      inputPlaceholder: l10n("tan.confirm.placeholder")
-    ) { [weak self] in
-      guard let cert = self?.hCert else {
-        return
+   func saveCert(enteredPin : String)
+   {
+      
+      guard let cert = self.hCert else {
+         return
       }
-      GatewayConnection.claim(cert: cert, with: $0) { success, newTan in
-        if success {
-          guard let cert = self?.hCert else {
-            return
-          }
-          LocalData.add(cert, with: newTan)
-          self?.newCertAdded = true
-          self?.showAlert(
-            title: l10n("tan.confirm.success.title"),
-            subtitle: l10n("tan.confirm.success.text")
-          ) { _ in
-            self?.dismiss(animated: true, completion: nil)
-          }
-        } else {
-          self?.showAlert(
-            title: l10n("tan.confirm.fail.title"),
-            subtitle: l10n("tan.confirm.fail.text")
-          )
-        }
+      
+      GatewayConnection.claim(cert: cert, with: enteredPin)
+      {
+         success, newTan in
+        
+         if success
+         {
+            guard let cert = self.hCert else
+            {
+               return
+            }
+         
+            LocalData.add(cert, with: newTan)
+          
+            self.newCertAdded = true
+          
+            self.showAlert(title: l10n("tan.confirm.success.title"), subtitle: l10n("tan.confirm.success.text"))
+            {
+               _ in
+               self.dismiss(animated: true, completion: nil)
+            }
+         }
+         else
+         {
+            self.showAlert(title: l10n("tan.confirm.fail.title"), subtitle: l10n("tan.confirm.fail.text")
+         )
       }
     }
-  }
+   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let child = segue.destination as? CertPagesVC {
